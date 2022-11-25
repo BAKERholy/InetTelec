@@ -16,7 +16,13 @@
   <body>
     <header class="page-header container">
       <nav class="navigation">
-        <img class="logo" alt="logo" src="/img/InetTelecom.svg" width="100" height="70" />
+        <img
+          class="logo"
+          alt="logo"
+          src="/img/InetTelecom.svg"
+          width="100"
+          height="70"
+        />
         <button
           aria-label="Открыть/закрыть меню"
           class="navigation__toggle"
@@ -35,7 +41,7 @@
             </li>
             <li class="navigation-list__item">
               <span class="navigation-list_tel">
-                <a class="navigation-list__link" href="”tel:8800775-45-01”">
+                <a class="navigation-list__link" href="”tel:88007754501”">
                   Позвоните нам
                 </a>
               </span>
@@ -54,49 +60,233 @@
     </header>
     <main class="page-main container">
       <h1 class="visually-hidden">InetTelecom</h1>
+      <section class="connection">
+        <div class="connection_block">
+          <h2 class="connection_block-title">
+            Ваш интернет дома,<br />
+            на даче или в офисе
+          </h2>
+          <button class="conection_block-button">Подключить</button>
+        </div>
+        <div class="conection_block-buttons">
+          <button class="connection_block-pay">Оплатить</button>
+          <button class="connection_block-service">Сервис</button>
+        </div>
+      </section>
+      <section class="tarifs">
+        <h2 class="tarifs_title">
+          Тарифы
+        </h2>
+        <div class="wrapper">
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-item__trigger">
+                <h3 class="accordion-item__triger-title">Тарифы для физических лиц</h3>
+              </div>
+              <div class="accordion-item__content">
+                <h4 class="accordion-item__content-title">
+                  Безлимитный 50
+                </h4>
+                <p class="accordion-item__content-price">
+                  от 290 руб / мес
+                </p>
+                <p class="accordion-item__content-speed">
+                  до 50 мбит / сек
+                </p>
+                <button class="accordion-item__content-button">
+                  Подключить
+                </button>
+              </div>
+              <div class="accordion-item__content">
+                <h4 class="accordion-item__content-title">
+                  Безлимитный 100
+                </h4>
+                <p class="accordion-item__content-price">
+                  от 390 руб / мес
+                </p>
+                <p class="accordion-item__content-speed">
+                  до 100 мбит / сек
+                </p>
+                <button class="accordion-item__content-button">
+                  Подключить
+                </button>
+              </div>
+              <div class="accordion-item__content">
+                <h4 class="accordion-item__content-title">
+                  Безлимитный 200
+                </h4>
+                <p class="accordion-item__content-price">
+                  от 600 руб / мес
+                </p>
+                <p class="accordion-item__content-speed">
+                  до 200 мбит / сек
+                </p>
+                <button class="accordion-item__content-button">
+                  Подключить
+                </button>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item__trigger">
+                <h3 class="accordion-item__triger-title">Тарифы для юридических лиц</h3>
+              </div>
+              <div class="accordion-item__content">
+                <h4 class="accordion-item__content-title">
+                  Безлимитный Видное 10
+                </h4>
+                <p class="accordion-item__content-price">
+                  от 1000 руб / мес
+                </p>
+                <p class="accordion-item__content-speed">
+                  до 100 мбит / сек
+                </p>
+                <button class="accordion-item__content-button">
+                  Подключить
+                </button>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item__trigger">
+                <h3 class="accordion-item__triger-title">Тарифы для коттеджей и дачных поселков</h3>
+              </div>
+              <div class="accordion-item__content">
+                <h4 class="accordion-item__content-title">
+                  Безлимитный Дачный 75
+                </h4>
+                <p class="accordion-item__content-price">
+                  от 750 руб / мес
+                </p>
+                <p class="accordion-item__content-speed">
+                  до 75 мбит / сек
+                </p>
+                <button class="accordion-item__content-button">
+                  Подключить
+                </button>
+              </div>
+              <div class="accordion-item__content">
+                <h4 class="accordion-item__content-title">
+                  Безлимитный Дачный 100
+                </h4>
+                <p class="accordion-item__content-price">
+                  от 1000 руб / мес
+                </p>
+                <p class="accordion-item__content-speed">
+                  до 100 мбит / сек
+                </p>
+                <button class="accordion-item__content-button">
+                  Подключить
+                </button>
+              </div>
+              <div class="accordion-item__content">
+                <h4 class="accordion-item__content-title">
+                  Безлимитный Дачный 200
+                </h4>
+                <p class="accordion-item__content-price">
+                  от 1500 руб / мес
+                </p>
+                <p class="accordion-item__content-speed">
+                  до 200 мбит / сек
+                </p>
+                <p>
+                  * необходимо специальное оборудование
+                </p>
+                <button class="accordion-item__content-button">
+                  Подключить
+                </button>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item__trigger">
+                <h3 class="accordion-item__triger-title">Услуга открытый Ip-адрес</h3>
+              </div>
+              <div class="accordion-item__content">
+                <h4 class="accordion-item__content-title">
+                  Для физических лиц
+                </h4>
+                <p class="accordion-item__content-subtitle">
+                  Внешний IP
+                </p>
+                <p class="accordion-item__content-price">
+                  300 руб / мес
+                </p>
+                <button class="accordion-item__content-button">
+                  Подключить
+                </button>
+              </div>
+              <div class="accordion-item__content">
+                <h4 class="accordion-item__content-title">
+                  Для юридических лиц
+                </h4>
+                <p class="accordion-item__content-subtitle">
+                  Внешний IP
+                </p>
+                <p class="accordion-item__content-price">
+                  от 350 руб / мес
+                </p>
+                <button class="accordion-item__content-button">
+                  Подключить
+                </button>
+              </div>
+              <div class="accordion-item__content">
+                <h4 class="accordion-item__content-title">
+                  Для коттеджей<br> и дачных поселков
+                </h4>
+                <p class="accordion-item__content-subtitle">
+                  Внешний IP
+                </p>
+                <p class="accordion-item__content-price">
+                  от 400 руб / мес
+                </p>
+                <button class="accordion-item__content-button">
+                  Подключить
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
     </main>
     <footer class="page-footer container">
       <div class="page-footer_block">
         <div class="page-footer_block-info">
-          <h3 class="page-footer_block-title">
-            Подключение
-          </h3>
+          <h3 class="page-footer_block-title">Подключение</h3>
           <p class="page-footer_block-text">
-            г. Видное, пгт. Горки Ленинские, СНТ Победитель,<br> СНТ Колхозник, СНТ Победа, СНТ Ветеран, СНТ Реформа,<br> СНТ Победа, ЖК «АиБ», ЖК КУПЕЛИНКА, ЖК «АиБ»,<br> ЖК Новобулатниково, пос. Измайлово, пос. Дубровский, <br>д. Вырубово, д. Суханово, д. Спасское, д. Жабкино, д. Таболово,<br> д. Спасские Выселки, с. Булатниково, мкр. «Эко Видное», <br>ЖК «Краски Жизни», ЖК «Радужный», ЖК «Видный», ЖК «Клубный», <br>ЖК «Зелёные Аллеи», ЖК «Усадьба Суханово», мкр «Новый».
+            г. Видное, пгт. Горки Ленинские, СНТ Победитель,<br />
+            СНТ Колхозник, СНТ Победа, СНТ Ветеран, СНТ Реформа,<br />
+            СНТ Победа, ЖК «АиБ», ЖК КУПЕЛИНКА, ЖК «АиБ»,<br />
+            ЖК Новобулатниково, пос. Измайлово, пос. Дубровский, <br />д.
+            Вырубово, д. Суханово, д. Спасское, д. Жабкино, д. Таболово,<br />
+            д. Спасские Выселки, с. Булатниково, мкр. «Эко Видное», <br />ЖК
+            «Краски Жизни», ЖК «Радужный», ЖК «Видный», ЖК «Клубный», <br />ЖК
+            «Зелёные Аллеи», ЖК «Усадьба Суханово», мкр «Новый».
           </p>
         </div>
         <div class="page-footer_block-info">
-          <h3 class="page-footer_block-title">
-            Способы оплаты
-          </h3>
+          <h3 class="page-footer_block-title">Способы оплаты</h3>
           <p class="page-footer_block-text">
-            Сбербанк Онлайн<br>
-            Uniteller<br>
-            Mobigеньги<br>
-            QIWI<br>
+            Сбербанк Онлайн<br />
+            Uniteller<br />
+            Mobigеньги<br />
+            QIWI<br />
           </p>
         </div>
         <div class="page-footer_block-info">
-          <h3 class="page-footer_block-title">
-            Обратная связь
-          </h3>
+          <h3 class="page-footer_block-title">Обратная связь</h3>
           <p class="page-footer_block-text">
-            Московская область,<br>
-            Ленинский район, г. Видное<br>
-            
-            +7 495 549-75-78<br>
-            +7 495-223-30-22, круглосуточный<br>
-            
+            Московская область,<br />
+            Ленинский район, г. Видное<br />
+
+            +7 495 549-75-78<br />
+            +7 495-223-30-22, круглосуточный<br />
+
             info@inet-telecom.ru
           </p>
         </div>
         <div class="page-footer_block-button">
-          <button class="footer_button">
-            Пожаловаться Директору
-          </button>
+          <button class="footer_button">Пожаловаться Директору</button>
           <p class="page-footer_block-text">
-            © 2009-2022
-            Компания "Инет-Телеком"
+            © 2009-2022 Компания "Инет-Телеком"
           </p>
         </div>
       </div>

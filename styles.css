@@ -12,6 +12,7 @@
     z-index: 1;
     background-color: orange;
     display: flex;
+    align-items: center;
 }
 .navigation--closed .navigation__list {
     display: none;
@@ -37,9 +38,7 @@
     text-align: center;
     padding-bottom: 50px;
 }
-.navigation-list__item {
-    padding-top: 68px;
-}
+
 @media screen and (min-width: 576px) {
     .navigation__toggle {
         width: 1px;
@@ -67,6 +66,9 @@
         margin: 0 auto;
         padding-top: 33px;
    }
+   
+   
+
 }
 .navigation-list {
     list-style: none;
@@ -77,6 +79,7 @@
     line-height: 22px;
     text-decoration: none;
     color: white;
+    
 }
 
 
@@ -150,3 +153,194 @@
     font-size: 14px;
     font-family: "Montserrat", arial, sans-serif;
 }
+
+
+@media screen and (max-width: 576px) {
+    .page-footer_block {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .page-footer_block-button {
+        align-items: center;
+    }
+}
+
+.connection {
+    background: #e65c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #F9D423, #e65c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    width: 100%;
+    height: 700px;
+    
+}
+
+.connection_block {
+    padding: 100px;
+}
+
+.connection_block::before {
+    content: '';
+    background-image: url(./img/Saly-11_1.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 30px;
+    left: 670px;
+    z-index: 2;
+}
+
+.connection_block-title {
+    color: white;
+    font-family: "Montserrat", arial, sans-serif;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.conection_block-button {
+    width: 360px;
+    height: 100px;
+    border-color: yellowgreen;
+    border-radius: 60px;
+    color: yellowgreen;
+    font-size: 28px;
+    font-family: "Montserrat", arial, sans-serif;
+    cursor: pointer;
+}
+
+.conection_block-button::after {
+    content: "";
+    width: 48px;
+    height: 48px;
+    z-index: 2;
+    background-image: url(./img/icons8-интернет-48.png);
+    position: absolute;
+    top: 265px;
+    left: 130px;
+}
+
+.conection_block-buttons {
+    display: flex;
+    flex-direction:row;
+    padding: 45px;
+}
+
+.connection_block-pay {
+    margin: 10px;
+    width: 250px;
+    height: 50px;
+    font-size: 22px;
+    font-family: "Montserrat", arial, sans-serif;
+    color: #f9b536;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.connection_block-pay::before {
+    content: '';
+    width: 80px;
+    height: 60px;
+    background-image: url(./img/Cards.png);
+    top: 480px;
+    left: 50px;
+    z-index: 2;
+    position: absolute;
+}
+
+.connection_block-service {
+    margin: 10px;
+    width: 250px;
+    height: 50px;
+    font-size: 22px;
+    font-family: "Montserrat", arial, sans-serif;
+    color: #f9b536;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.connection_block-service::before {
+    content: '';
+    width: 80px;
+    height: 60px;
+    background-image: url(./img/service.png);
+    top: 480px;
+    left: 330px;
+    z-index: 2;
+    position: absolute;
+}
+
+.tarifs {
+    background: #e65c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #F9D423, #e65c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 30px;
+}
+
+.tarifs_title {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.accordion {
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+}
+
+.accordion-item--active .accordion-item__trigger {
+    background-color: #f9b536;
+}
+
+.accordion-item--active .accordion-item__content {
+    display: block;
+    background: #e65c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F9D423, #e65c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.accordion-item__trigger {
+    padding: 20px;
+    border: 1px solid orange;
+}
+
+.accordion-item__triger-title {
+    color: white;
+    font-size: 30px;
+    text-align: left;
+}
+
+.accordion-item__content {
+    padding: 20px;
+    border: 1px solid orange;
+    border-top: none;
+    display: none;
+}
+
+.accordion-item__content-button {
+    width: 100px;
+    height: 55px;
+    color: white;
+    border-radius: 30px;
+    background-color: transparent;
+    border-color: white;
+}
+
+
+
